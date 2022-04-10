@@ -88,7 +88,16 @@ Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends re
 
 ## Logging
 
-After client finishes donwloading web page, statistics will be saved to file with template `plt_C%_R%.log`, where C denotes client ID, and R denoted run ID.
+After client finishes donwloading web page, statistics will be saved to file with template `plt_C%_R%.log`, where C denotes client ID, and R denotes run ID.
+
+Example
+
+	INFO - 1649596603.091179 -retrieve_page - 72 - 239583 - PLT main object_1: 5
+    INFO - 1649596603.169425 -retrieve_page - 72 - 239583 - PLT main object_2: 83
+	INFO - 1649596603.206722 -retrieve_page - 82 - 239583 - PLT Page_1: 120 Reading Time: 25.460
+	INFO - 1649596628.698372 -retrieve_page - 72 - 239583 - PLT main object_1: 6
+	INFO - 1649596628.727034 -retrieve_page - 72 - 239583 - PLT main object_2: 34
+	INFO - 1649596628.810912 -retrieve_page - 82 - 239583 - PLT Page_2: 118 Reading Time: 0.034
 
 ## Caveats
 
