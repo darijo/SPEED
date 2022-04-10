@@ -93,7 +93,7 @@ The line
  
 	STATIC_FILE_DIR = os.path.join(str(os.getcwd()), "Content/")
 
-needs to be set with correct path to web content (Content folder in our examples when creating dummy web pages)
+needs to be set with correct path to web content (**Content** folder in our examples when creating dummy web pages)
 
 
    
