@@ -28,12 +28,14 @@ Contents:
 ## Installation
 
 	Clone the repository: git clone https://github.com/darijo/SPEED.git
-	Install Dependencies
-   	- pip install Flask
-   	- pip install waitress
-   	- pip install aiohttp
-   	- pip install numpy
-   	- pip install scipy
+	
+	Install Dependencies:
+   	
+   	pip install Flask
+   	pip install waitress
+   	pip install aiohttp
+   	pip install numpy
+   	pip install scipy
    
    
 ## Usage
