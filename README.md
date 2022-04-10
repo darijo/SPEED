@@ -99,6 +99,11 @@ Example
 	INFO - 1649596628.727034 -retrieve_page - 72 - 239583 - PLT main object_2: 34
 	INFO - 1649596628.810912 -retrieve_page - 82 - 239583 - PLT Page_2: 118 Reading Time: 0.034
 
+	PLT main object_1: 5 -> milliseconds needed to download main object 1
+	PLT Page_1: 120 Reading Time: 25.460 -> Page 1 took 120 milliseconds to download. Client will spend 25.460 seconds reading it.
+
+
+
 ## Caveats
 
 Path to folder with web content needs to be setup in ```__init__.py``` of flask folder. 
