@@ -75,7 +75,7 @@ Command will listen on localhost and port 8088. Note that command expects script
 ### Run Client
 	python speed_web_client.py -rn 1 --file Data/HTTP_Client_1_R5_W10.json  -sip http://127.0.0.1:8088/page --out_path results/plt_C1_R1.log
 	
-Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends requests to 127.0.0.1:8088/page. Results (log) is save to results/plt_C1_R1.log
+Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends requests to server listening on 127.0.0.1:8088/page. Results (log) is saved to results/plt_C1_R1.log
 
 	-rn	run identifier
    
@@ -84,7 +84,18 @@ Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends re
    	-sip	IP address of the server storing web content
    
    	--out_path	location where to save log files
-   
+
+## Caveats
+
+Path to folder with web content needs to be setup in ```__init__.py''' of flask folder. 
+
+The line
+ 
+	STATIC_FILE_DIR = os.path.join(str(os.getcwd()), "Content/")
+
+needs to be set with correct path to web content (Content folder in our examples when creating dummy web pages)
+
+
    
 
 
