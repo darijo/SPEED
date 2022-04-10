@@ -22,6 +22,18 @@ Contents:
 - aiohttp library (https://docs.aiohttp.org/en/stable/)
 - numpy library (https://numpy.org/)
 - scipy library (https://scipy.org/)
+- waitress library (https://docs.pylonsproject.org/projects/waitress/en/latest/)
+- Flask (https://flask.palletsprojects.com/en/2.1.x/)
 
 ## Installation
+
+   git clone https://github.com/darijo/SPEED.git
+   
+   ### Install Dependencies
+   - pip install Flask
+   - pip install waitress
+   - pip install aiohttp
+   - pip install numpy
+   - pip install scipy
+   
 
