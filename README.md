@@ -50,14 +50,19 @@ JSON files are created per user, containing all the information about each webpa
      
    Command creates 10 webpages per client (five clients), for five runs (in total 50 webpages per client). Data is saved in Content folder, while JSON file are saved in Data folder.
    
-   --save_content                location where to save web content
-   --save_json                   location where to save JSON files
-   --numClients                  number of clients (a separate JSON file is generated for each client)
-   --numRuns                     the number of planned runs to generate random page sequences for subsequent runs.
-   --webPages                    number of webpages per client
+   --save_content	location where to save web content
+   
+   --save_json	location where to save JSON files
+   
+   --numClients	number of clients (a separate JSON file is generated for each client)
+   
+   --numRuns	the number of planned runs to generate random page sequences for subsequent runs
+   
+   --webPages	number of webpages per client
    
 ### Run server
 
    - `waitress-serve --listen=127.0.0.1:8088 --call 'flaskr:create_app'`
+   
    Command will listen on localhost and port 8088. Note that command expects script for flask (provided in flask folder)
 
