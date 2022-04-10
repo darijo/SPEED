@@ -40,19 +40,19 @@ Contents:
    
 ## Usage
 
-	Generate JSON and dummy web content
+Generate JSON and dummy web content
 
-	JSON files are created per user, containing all the information about each webpage, i.e., number of main and inline objects, size (in bytes) of each object. Also, this file stores information about user 
+JSON files are created per user, containing all the information about each webpage, i.e., number of main and inline objects, size (in bytes) of each object. Also, this file stores information about user 
 	behaviour for each webpage, reading or dwell time (i.e., how much time user spends "reading" the content). Figure shows the example of JSON file structure.
 
-	<p align="center">
-	<img src="json_example.png" alt="json example" width="300">
-	</p>
+<p align="center">
+<img src="json_example.png" alt="json example" width="300">
+</p>
 
 
    	python speed_web_generator.py --save_content Content/ --save_json Data/ --numClients 5 --numRuns 5 --webPages 10
      
-   	Command creates 10 webpages per client (five clients), for five runs (in total 50 webpages per client). Data is saved in Content folder, while JSON file are saved in Data folder.
+Command creates 10 webpages per client (five clients), for five runs (in total 50 webpages per client). Data is saved in Content folder, while JSON file are saved in Data folder.
    
    	--save_content	location where to save web content
    
