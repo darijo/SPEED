@@ -36,4 +36,12 @@ Contents:
    - pip install numpy
    - pip install scipy
    
+   
+## Usage
+
+### Generate JSON and dummy web content
+
+JSON files are created per user, containing all the information about each webpage, i.e., number of main and inline objects, size (in bytes) of each object. Also, this file stores information about user behaviour for each webpage, reading or dwell time (i.e., how much time user spends "reading" the content). Figure shows the example of JSON file structure.
+![](json_example.png)
+   
 
