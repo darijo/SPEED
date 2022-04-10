@@ -1,5 +1,4 @@
 import asyncio
-#import uvloop
 import time
 import aiohttp
 import logging
@@ -7,6 +6,7 @@ import json
 import re
 import socket
 import numpy as np
+import os
 from argparse import ArgumentParser
 
 async def download_site(session, url):
@@ -142,6 +142,12 @@ args = parser.parse_args()
 
 
 if __name__ == "__main__":
+
+    # get the output directory
+    folder_path = os.path.dirname(os.path.abspath(args.out_path))
+    
+    # create folder if does not exists
+    os.system("mkdir -p %s"%folder_path)
 
     # set logging level
     logging.basicConfig(filename=args.out_path, filemode='w', format='%(name)s - %(levelname)s - %(created)f -%(funcName)s - %(lineno)d - %(process)d - %(message)s', level=logging.INFO)

@@ -27,9 +27,10 @@ Contents:
 
 ## Installation
 
-	Clone the repository: git clone https://github.com/darijo/SPEED.git
+Clone the repository
+	git clone https://github.com/darijo/SPEED.git
 	
-	Install Dependencies:
+Install Dependencies
    	
    	pip install Flask
    	pip install waitress
@@ -40,7 +41,7 @@ Contents:
    
 ## Usage
 
-Generate JSON and dummy web content
+### Generate JSON and dummy web content
 
 JSON files are created per user, containing all the information about each webpage, i.e., number of main and inline objects, size (in bytes) of each object. Also, this file stores information about user 
 	behaviour for each webpage, reading or dwell time (i.e., how much time user spends "reading" the content). Figure shows the example of JSON file structure.
@@ -64,9 +65,27 @@ Command creates 10 webpages per client (five clients), for five runs (in total 5
    
    	--webPages	number of webpages per client
    
-	Run server
+### Run server
 
 	waitress-serve --listen=127.0.0.1:8088 --call 'flaskr:create_app'
    
-   	Command will listen on localhost and port 8088. Note that command expects script for flask (provided in flask folder)
+Command will listen on localhost and port 8088. Note that command expects script for flask (provided in flask folder)
 
+
+### Run Client
+	python speed_web_client.py -rn 1 --file Data/HTTP_Client_1_R5_W10.json  -sip http://127.0.0.1:8088/page --out_path results/plt_C1_R1.log
+	
+Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends requests to 127.0.0.1:8088/page. Results (log) is save to results/plt_C1_R1.log
+
+	-rn	run identifier
+   
+   	--file	location of JSON file for the client
+   
+   	-sip	IP address of the server storing web content
+   
+   	--out_path	location where to save log files
+   
+   
+
+
+	

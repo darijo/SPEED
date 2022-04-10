@@ -4,7 +4,9 @@ from flask import Flask
 from flask import send_from_directory
 from pathlib import Path
 from werkzeug.serving import WSGIRequestHandler
-STATIC_FILE_DIR = os.path.join(str(Path.home()), "CONTENT/")
+
+
+STATIC_FILE_DIR = os.path.join(str(os.getcwd()), "Content/")
 TEMPLATE_STATIC_FILE = "Client_%s/Run_%s/Page_%s/%s"
 
 def create_app(test_config=None):
