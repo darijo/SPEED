@@ -43,7 +43,10 @@ Contents:
 
 JSON files are created per user, containing all the information about each webpage, i.e., number of main and inline objects, size (in bytes) of each object. Also, this file stores information about user behaviour for each webpage, reading or dwell time (i.e., how much time user spends "reading" the content). Figure shows the example of JSON file structure.
 
-<p style="text-align:center;">
-<img src="json_example.png" alt="json example" width="500"/>
-</p>
+<center><img src="json_example.png" alt="json example" width="300"/></center>
+
+
+- `python speed_web_generator.py --save_content Content/ --save_json Data/ --numClients 5 --numRuns 5 --webPages 10`
+     
+   Command creates 10 webpages per client (five clients), for five runs (in total 50 webpages per client). Data is saved in Content folder, while JSON file are saved in Data folder.
 
