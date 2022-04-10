@@ -87,7 +87,7 @@ Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends re
 
 ## Caveats
 
-Path to folder with web content needs to be setup in ```__init__.py''' of flask folder. 
+Path to folder with web content needs to be setup in ```__init__.py``` of flask folder. 
 
 The line
  
