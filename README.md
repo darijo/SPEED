@@ -10,10 +10,11 @@ Contents:
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Logging](#logging)
 - [Caveats](#caveats)
 - [Acknowledgements](#acknowledgements)
-- [Helpful info](#helpful-info)
-- [License](#license)
+
+
 
 
 ## Requirements
@@ -84,6 +85,10 @@ Command runs web client based on the file HTTP_Client_1_R5_W10.json and sends re
    	-sip	IP address of the server storing web content
    
    	--out_path	location where to save log files
+
+## Logging
+
+After client finishes donwloading web page, statistics will be saved to file with template `plt_C%_R%.log`, where C denotes client ID, and R denoted run ID.
 
 ## Caveats
 
