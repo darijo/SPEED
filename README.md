@@ -12,7 +12,7 @@ Contents:
 - [Usage](#usage)
 - [Logging](#logging)
 - [Caveats](#caveats)
-- [Acknowledgements](#acknowledgements)
+- [Citation](#citation)
 
 
 
@@ -115,7 +115,7 @@ The line
 needs to be set with correct path to web content (**Content** folder in our examples when creating dummy web pages)
 
 
-## Citing Work
+## Citation
 	
 We kindly ask that should you mention any of our datasets, or use our code, in your publication, that you would reference the following paper:
 	
